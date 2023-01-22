@@ -65,3 +65,12 @@ CONFIG_ZMK_USB_LOGGING=y
 
 
 CONFIG_BUILD_OUTPUT_UF2=y
+
+
+# Testing not waking up the computer 
+# https://www.reddit.com/r/kinesisadvantage/comments/105fbcy/advantage_360_pro_keeps_waking_mac_from_sleep/
+CONFIG_ZMK_SLEEP=y
+# Seconds - 15 minutes
+CONFIG_ZMK_BATTERY_REPORT_INTERVAL=900 
+# Miliseconds - 10 minutes
+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=600000 
